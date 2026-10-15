@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+[load] [MOD-2] 检测到无 NVIDIA GPU 或无 bitsandbytes，自动回退 fp32 基座 + LoRA（只训适配器思想不变）
+
+Loading weights:   0%|          | 0/471 [00:00<?, ?it/s]
+Loading weights:  21%|██        | 98/471 [00:00<00:00, 978.57it/s]
+Loading weights:  42%|████▏     | 196/471 [00:00<00:00, 903.11it/s]
+Loading weights:  62%|██████▏   | 293/471 [00:00<00:00, 926.83it/s]
+Loading weights:  86%|████████▌ | 405/471 [00:00<00:00, 983.43it/s]
+Loading weights: 100%|██████████| 471/471 [00:00<00:00, 1009.19it/s]
+D:\code\python\Lib\site-packages\peft\tuners\tuners_utils.py:331: UserWarning: Already found a `peft_config` attribute in the model. This will lead to having multiple adapters in the model. Make sure to know what you are doing!
+  warnings.warn(
+trainable params: 921,600 || all params: 257,406,528 || trainable%: 0.3580
+[dpo] ep1 step1/12 loss=0.7548 margin=-0.120
+[dpo] ep1 step2/12 loss=0.8749 margin=-0.335
+[dpo] 已达 2 步，提前结束
+[dpo] 适配器已保存到 ./dpo_adapter

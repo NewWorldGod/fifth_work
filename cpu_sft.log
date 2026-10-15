@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+[load] [MOD-2] 检测到无 NVIDIA GPU 或无 bitsandbytes，自动回退 fp32 基座 + LoRA（只训适配器思想不变）
+
+Loading weights:   0%|          | 0/471 [00:00<?, ?it/s]
+Loading weights:  36%|███▋      | 171/471 [00:00<00:00, 1660.19it/s]
+Loading weights:  72%|███████▏  | 338/471 [00:00<00:00, 1162.96it/s]
+Loading weights:  98%|█████████▊| 463/471 [00:00<00:00, 1031.37it/s]
+Loading weights: 100%|██████████| 471/471 [00:00<00:00, 1117.36it/s]
+trainable params: 921,600 || all params: 257,406,528 || trainable%: 0.3580
+[sft] ep1 step10/15 loss=7.3696
+[sft] 已达 10 步，提前结束
+[sft] 适配器已保存到 ./sft_adapter
+TOTAL_MINUTES: 2.41

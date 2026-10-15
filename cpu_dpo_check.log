@@ -1,0 +1,2 @@
+margin = β·[(πθ(yw)-πref(yw)) - (πθ(yl)-πref(yl))] = -0.0600
+DPO loss = -log σ(margin) = 0.7236（margin 越大 loss 越小；margin<0 说明模型更偏好 rejected，需要继续训练）

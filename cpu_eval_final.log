@@ -1,0 +1,35 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+
+Loading weights:   0%|          | 0/471 [00:00<?, ?it/s]
+Loading weights:  37%|███▋      | 172/471 [00:00<00:00, 1708.77it/s]
+Loading weights:  73%|███████▎  | 343/471 [00:00<00:00, 1622.06it/s]
+Loading weights: 100%|██████████| 471/471 [00:00<00:00, 1598.70it/s]
+
+===== 基线 × 15 题 =====
+基线        count   正确 1/5
+基线        attr    正确 0/5
+基线        exist   正确 0/5
+基线        总计   正确 1/15
+
+
+===== SFT × 15 题 =====
+SFT       count   正确 1/5
+SFT       attr    正确 0/5
+SFT       exist   正确 0/5
+SFT       总计   正确 1/15
+
+
+Loading weights:   0%|          | 0/471 [00:00<?, ?it/s]
+Loading weights:  38%|███▊      | 181/471 [00:00<00:00, 1782.86it/s]
+Loading weights:  76%|███████▋  | 360/471 [00:00<00:00, 1626.11it/s]
+Loading weights: 100%|██████████| 471/471 [00:00<00:00, 1608.65it/s]
+
+===== SFT+DPO × 15 题 =====
+SFT+DPO   count   正确 1/5
+SFT+DPO   attr    正确 0/5
+SFT+DPO   exist   正确 0/5
+SFT+DPO   总计   正确 1/15
+
+提示：把三阶段结果抄进报告表 3；另抽 2 题做人工忠实度评分（答案是否仅陈述图中事实）。
+TOTAL_MINUTES: 6.36
